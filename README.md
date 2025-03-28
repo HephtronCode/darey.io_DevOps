@@ -16,6 +16,8 @@
 
 
 5. Visual Studio Code
-   ![image](https://github.com/user-attachments/assets/3aae7531-5e8d-48ff-8d47-ec9ac7f210f3)
+   ![image](https://github.com/user-attachments/assets/b9a9da9e-a4ee-43b6-b969-a5c90b691feb)
+
+ 
 
    
