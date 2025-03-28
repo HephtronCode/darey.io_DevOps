@@ -1,23 +1,25 @@
-# darey.io_DevOps Environment setu up
+# darey.io_DevOps Environment setup
 
-1. Git bash
-![image](https://github.com/user-attachments/assets/651b2d81-524f-4604-8195-bbedd92e0f0f)
+1.  Visual Studio Code Welcome Screen
 
-
-2. Ubuntu terminal
-   Note: Kindly note that I use ubuntu on my windows subsystem and also have a linux mint based system
-  ![image](https://github.com/user-attachments/assets/4a7c4ba7-94ee-436f-881d-a424d686bdee)
-
-![image](https://github.com/user-attachments/assets/ea99144e-e34b-4c1b-a10c-033007cdffa5)
-
-
-4. Github Profile
-   ![image](https://github.com/user-attachments/assets/b75807fa-30c9-409d-a7ca-5c18a81f496a)
-
-
-5. Visual Studio Code
-   ![image](https://github.com/user-attachments/assets/b9a9da9e-a4ee-43b6-b969-a5c90b691feb)
-
- 
+![image](https://github.com/user-attachments/assets/770ad57a-2548-416f-9b38-ecbc72bce4a3)
 
    
+2. Git bash installation confirmation
+
+   ![image](https://github.com/user-attachments/assets/a0fc1083-365b-4000-ab46-549518e98246)
+
+3. Oracle VirtualBox Manager Welcome Screen
+
+   ![image](https://github.com/user-attachments/assets/c909c203-4f2a-4499-9b62-cd71acca127b)
+
+
+4. Ubuntu terminal
+
+   ![image](https://github.com/user-attachments/assets/9460c872-e91a-4e8f-9924-993cc152f289)
+
+
+5. Github Profile Dashboard
+
+   ![image](https://github.com/user-attachments/assets/c83d6301-d900-4998-9e35-b1284ef9798d)
+
