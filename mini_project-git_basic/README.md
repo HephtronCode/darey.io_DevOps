@@ -23,3 +23,26 @@ Command to check the presence of the html file and if i has been staged
 Command: `git commit -m "created html file"`
 
 ![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/use%20of%20git%20commit%20command.png?raw=true)
+
+### Added the HTML file to main origin
+Command: `git add index.html`
+
+![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/Git_add%20command.png?raw=true)
+
+### Check the available branch on the local repo
+Command: `git branch`
+
+![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/checking%20the%20available%20branch.png?raw=true)
+
+### Created the update-navigation branch and switching
+Command: `git checkout -b update-navigation`
+
+![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/created%20the%20update%20navigation%20branch.png?raw=true)
+
+### Pulling changes from main to update-navigation
+Command: `git pull origin main`
+
+![image](https://github.com/user-attachments/assets/b3dc0946-caa4-4bf2-b24e-11384cb83b17)
+
+
+
