@@ -6,10 +6,20 @@
 ### Github Profile
 Command to clone the repo
 `git clone `
+
 ![Github Profile](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/git%20push%20command.png?raw=true)
 
 ### HTML Boilerplate
+
 ![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/html%20boilerplate.png?raw=true)
 
 ### HTML File Presence in the Repo
+Command to check the presence of the html file and if i has been staged
+`git status`
+
 ![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/html_shots.png?raw=true)
+
+### Commit HTML file to main
+Command: `git commit -m "created html file"`
+
+![](https://github.com/HephtronCode/darey.io_DevOps/blob/main/mini_project-git_basic/img/use%20of%20git%20commit%20command.png?raw=true)
