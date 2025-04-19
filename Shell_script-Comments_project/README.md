@@ -13,155 +13,104 @@ Comments are essential parts of shell scripting. They help us document or take n
 
 ## Types of Comments in Shell Scripting
 
-There are two types of comments in shell scripting: **single-line comments** and **multi-line comments**.
+There are three types of comments in shell scripting: **single-line comments**, **multi-line comments**, and **inline comments**.
 
 ### Single-line Comments
 
 Single-line comments are used to comment out a single line of code. They are denoted by a single `#` sign followed by the comment.
 
----
-
-### Task: Single-line Comments
-
-#### 1. Create a file with `vim` called `comment.sh`
-
-To create a file with `vim`, use the `vim` command followed by the name of the file.
-
-- **Command**:
-```bash
-vim comment.sh
-```
-- **Screenshot**:
-![](./img/01.png)
-
-#### 2. Write a script that echoes "Hello World!"
-
-To write a script that echoes "Hello World!", we use the `echo` command.
-
-```bash
-#!/bin/bash
-# This is a single-line comment in this script
-echo "Hello World!"
-```
-
-- **Screenshot 1**:
-![](./img/02.png)
-
-- **Screenshot 2**:
-![](./img/03.png)
-
-In Screenshot 1, the script is shown without comments. In Screenshot 2, a single-line comment is applied.
-
-#### 3. Save the script in `vim` by pressing the `esc` key, typing `:wq`, and pressing `Enter`.
-
-```bash
-:wq
-```
-- **Screenshot**:
-![](./img/04.png)
-
-#### 4. Confirm the presence of the `.sh` file and check its permissions using the `ls -latr` command.
-
-```bash
-ls -latr
-```
-- **Screenshot**:
-![](./img/05.png)
-
-From the screenshot above, the user only has read and write permissions.
-
-#### 5. Change user permissions to execute the file using the `chmod` command.
-
-```bash
-chmod u+x comment.sh
-```
-- **Screenshot**:
-![](./img/06.png)
-
-#### 6. Run the script using `./`.
-
-```bash
-./comment.sh
-```
-
-- **Screenshot**:
-![](./img/08.png)
-
-In the screenshot above, the script prints out "Hello World!" without the comments.
-
----
-
 ### Multi-line Comments
 
 Multi-line comments are used to comment on multiple lines of code. In shell scripting, there is no direct syntax for multi-line comments, but we can achieve this by using `#` at the beginning of each line.
 
+### Inline Comments
+
+Inline comments are comments written on the same line as a command. They are useful for providing context or explanations for specific commands.
+
 ---
 
-### Task: Multi-line Comments
+## Task: Create `commented_script.sh`
 
-#### 1. Create a file with `vim` called `comment2.sh`.
+The following script demonstrates the use of single-line, multi-line, and inline comments while performing the specified tasks: displaying a welcome message, creating a folder, listing files, and displaying a goodbye message.
 
-```bash
-vim comment2.sh
-```
-- **Screenshot**:
-![](./img/09.png)
-
-#### 2. Write a script that creates two `.txt` files (`text1.txt` and `text2.txt`) while adding a multi-line comment.
+### Script: `commented_script.sh`
 
 ```bash
 #!/bin/bash
-# This is a multi-line comment
-# This script creates two text files called text1.txt and text2.txt
-# Creating text1.txt
-touch text1.txt
-# Creating text2.txt
-touch text2.txt
+
+# Single-line comment: This script demonstrates the use of comments in shell scripting.
+
+# Multi-line comment:
+# The script performs the following tasks:
+# 1. Displays a welcome message.
+# 2. Creates a folder named "example_folder".
+# 3. Lists the files in the current directory.
+# 4. Displays a goodbye message.
+
+# Display a welcome message
+echo "Welcome to the shell scripting tutorial!" # Inline comment: This prints a welcome message.
+
+# Create a folder named "example_folder"
+mkdir example_folder # Inline comment: This creates a new folder.
+
+# List the files in the current directory
+echo "Listing files in the current directory:"
+ls -latr # Inline comment: This lists all files with details.
+
+# Display a goodbye message
+echo "Goodbye! Script execution completed." # Inline comment: This prints a goodbye message.
 ```
 
-- **Screenshot**:
-![](./img/10.png)
+---
 
-#### 3. Save the script in `vim` by pressing the `esc` key, typing `:wq`, and pressing `Enter`.
+## Steps to Create and Execute the Script
+
+### 1. Create the Script File
+
+Use the `vim` command to create the script file.
 
 ```bash
-:wq
+vim commented_script.sh
 ```
 
-#### 4. Confirm the presence of the `.sh` file and check its permissions using the `ls -latr` command.
+- **Screenshot**: 
+![](./img/01.png)
+
+### 2. Write the Script
+
+Copy and paste the script above into the `commented_script.sh` file.
+
+- **Screenshot**:
+![](./img/02.png)
+### 3. Save and Exit
+
+Press the `esc` key, type `:wq`, and press `Enter` to save and exit.
+
+- **Screenshot**:
+![](./img/03.png)
+
+### 4. Make the Script Executable
+
+Change the file permissions to make it executable.
 
 ```bash
-ls -latr
+chmod u+x commented_script.sh
 ```
-- **Screenshot**:
-![](./img/11.png)
 
-#### 5. Change user permissions to execute the file using the `chmod` command.
+- **Screenshot**: 
+![](./img/04.png)
+![](./img/05.png)
+
+### 5. Run the Script
+
+Execute the script using the following command:
 
 ```bash
-chmod u+x comment2.sh
+./commented_script.sh
 ```
-- **Screenshot**:
-![](./img/12.png)
 
-#### 6. Run the script using `./`.
-
-```bash
-./comment2.sh
-```
-- **Screenshot**:
-![](./img/13.png)
-
-In the screenshot above, the script creates two text files: `text1.txt` and `text2.txt`.
-
-#### 7. Confirm the presence of the text files created and check their permissions using the `ls -latr` command.
-
-```bash
-ls -latr
-```
-- **Screenshot**:
-![](./img/13.png)
-
+- **Screenshot**: 
+![](./img/06.png)
 ---
 
 ## Use Cases for Comments in Shell Scripting
