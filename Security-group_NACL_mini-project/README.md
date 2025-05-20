@@ -1,7 +1,7 @@
 # Security Group and NACL Mini Project
 
 ## Overview
-This project is designed to help you understand and implement AWS Security Groups and Network Access Control Lists (NACLs). You will create a VPC with public and private subnets, configure security groups for EC2 instances, and set up NACLs for additional security.
+This project is designed to help you understand and implement AWS Security Groups and Network Access Control Lists (NACLs) using Terraform. You will create a VPC with public and private subnets, configure security groups for EC2 instances, and set up NACLs for additional security.
 
 ## Part 1
 1. Log into your AWS account and navigate the EC2 dashboard.
@@ -154,11 +154,140 @@ This project is designed to help you understand and implement AWS Security Group
 
 ![image](./img/34.png)
 
-# Project Conclusion
-In this mini project, you have learned how to create and configure AWS Security Groups and Network Access Control Lists (NACLs). You have also learned how to allow and deny traffic using security groups and NACLs. You have also learned how to associate NACLs with subnets and how to test the NACLs.
-You have also learned how to remove all traffic from NACLs and how to allow traffic for HTTP and SSH using security groups. You have also learned how to create a VPC with public and private subnets, configure security groups for EC2 instances, and set up NACLs for additional security.
+# bonus
+- NACL configuration using Terraform
+- Security group configuration using Terraform
+- Create a VPC with public and private subnets using Terraform
+- Configure security groups for EC2 instances using Terraform
+- Set up NACLs for additional security using Terraform
+- Test the NACLs using Terraform
+- Remove all traffic from NACLs using Terraform
+- Allow traffic for HTTP and SSH using security groups using Terraform
+- Remove all traffic from security groups using Terraform
+- Allow traffic for HTTP and SSH using security groups using Terraform
 
+- NACL configuration using Terraform
+1. Create a new file called `nacl.tf` in the project directory.
+2. Add the following code to the `nacl.tf` file to create a new NACL and associate it with the VPC:
 
+```hcl
+resource "aws_network_acl" "example" {
+  vpc_id = aws_vpc.example.id
 
+  ingress {
+    rule_no   = 100
+    protocol  = "tcp"
+    from_port = 80
+    to_port   = 80
+    cidr_block = "0.0.0.0/0"
+    action    = "allow"
+  }
 
+  egress {
+    rule_no   = 100
+    protocol  = "tcp"
+    from_port = 80
+    to_port   = 80
+    cidr_block = "0.0.0.0/0"
+    action    = "allow"
+  }
+}
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+  to_port        = 80
+  cidr_block     = "0.0.0.0/0"
+  action        = "allow"
+}
+    depends_on = [aws_vpc.example]
+  }
+}
+```
 
+![image](./img/35.png)
+
+3. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+  to_port        = 80
+  cidr_block     = "0.0.0.0/0"
+  action        = "allow"
+}
+  depends_on = [aws_vpc.example]
+}
+```
+4. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+  to_port        = 80
+  cidr_block     = "0.0.0.0/0"
+  action        = "allow"
+}
+  depends_on = [aws_vpc.example]
+}
+```
+4. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+    to_port        = 80
+    cidr_block     = "0.0.0.0/0"
+    action        = "allow"
+}
+  depends_on = [aws_vpc.example]
+}
+```
+4. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+    to_port        = 80
+    cidr_block     = "0.0.0.0/0"
+    action        = "allow"
+}
+  depends_on = [aws_vpc.example]
+}
+```
+4. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
+    to_port        = 80
+    cidr_block     = "0.0.0.0/0"
+    action        = "allow"
+}
+  depends_on = [aws_vpc.example]
+}
+```
+4. Add the following code to the `nacl.tf` file to create a new NACL rule and associate it with the VPC:
+
+```hcl
+resource "aws_network_acl_rule" "example" {
+  network_acl_id = aws_network_acl.example.id
+  rule_no        = 100
+  protocol       = "tcp"
+  from_port      = 80
